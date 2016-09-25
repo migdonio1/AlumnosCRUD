@@ -37,8 +37,7 @@ public class CreateStudentActivity extends AppCompatActivity {
         final StudentDataSource studentsDS = new StudentDataSource(this);
         studentsDS.open();
 
-        studentsDS.insertStudent("migdonio1",
-                "123456",
+        studentsDS.insertStudent(
                 editTextFirstname.getText().toString().trim(),
                 editTextLastname.getText().toString().trim(),
                 spinner.getSelectedItem().toString().trim()

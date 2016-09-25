@@ -35,7 +35,8 @@ public class UserDataSource {
         List<User> users = new ArrayList<>();
         User user;
 
-        Cursor cursor =
+        return users;
+
     }
 
 

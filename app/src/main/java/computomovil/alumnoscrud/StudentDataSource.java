@@ -44,7 +44,7 @@ public class StudentDataSource {
      * @param degree
      * @return row ID of the newly Student inserted row, or -1
      */
-    public long insertStudent(String username, String password, String firstname, String lastname, String degree){
+    public long insertStudent(String firstname, String lastname, String degree){
         ContentValues values = new ContentValues();
         values.put(StudentContract.COLUMN_NAME_FIRSTNAME, firstname);
         values.put(StudentContract.COLUMN_NAME_LASTNAME, lastname);
@@ -66,14 +66,8 @@ public class StudentDataSource {
         values.put(StudentContract.COLUMN_NAME_LASTNAME, lastname);
         values.put(StudentContract.COLUMN_NAME_DEGREE, degree);
 
-        Log.d("TEST DB 2", String.valueOf(id));
-
-        List<Student> students = getAllStudents();
-        students.get(id);
-        Log.d("TEST DB 2", String.valueOf(students.get(id).getId()));
-
         int result = database.update(StudentContract.TABLE_NAME, values, StudentContract._ID + "=" + id, null);
-        Log.d("TEST DB", String.valueOf(result));
+        Log.d("TEST DB3", String.valueOf(result));
     }
 
     /**
