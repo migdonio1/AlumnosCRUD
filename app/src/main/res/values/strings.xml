@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlumnosCRUD</string>
+
+    <string-array name="degree">
+        <item>LIS</item>
+        <item>LCC</item>
+        <item>LIC</item>
+        <item>LEM</item>
+        <item>LA</item>
+        <item>LM</item>
+    </string-array>
+</resources>
