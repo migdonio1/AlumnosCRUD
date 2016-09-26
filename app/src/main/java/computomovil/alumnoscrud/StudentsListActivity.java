@@ -1,6 +1,7 @@
 package computomovil.alumnoscrud;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringDef;
@@ -21,6 +22,8 @@ import java.util.stream.Collectors;
 public class StudentsListActivity extends AppCompatActivity {
 
     private ListView lv;
+    private static final String LOGIN = "login";
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -69,5 +72,21 @@ public class StudentsListActivity extends AppCompatActivity {
     public void onClickAddButton(View v) {
         Intent intent = new Intent(this, CreateStudentActivity.class);
         startActivity(intent);
+    }
+
+    public void onClickLogoutButton (View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        sharedPreferencesUpdate("none", "none");
+        startActivity(intent);
+    }
+
+    private void sharedPreferencesUpdate(String username, String password) {
+        SharedPreferences settings = getSharedPreferences(LOGIN, 0);
+        SharedPreferences.Editor editor = settings.edit();
+
+        editor.putString("username", username);
+        editor.putString("password", password);
+
+        editor.commit();
     }
 }
