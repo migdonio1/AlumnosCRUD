@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public EditText inputUsername;
     public EditText inputPassword;
+    public User userActive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
         inputUsername = (EditText) findViewById(R.id.inputUsername);
         inputPassword = (EditText) findViewById(R.id.inputPassword);
+
+        userActive = sharedPreferencesRead();
+
+        if(!Objects.equals(userActive.getUsername(), "none") && !Objects.equals(userActive.getPassword(), "none")){
+            Intent intent = new Intent(this, StudentsListActivity.class);
+            startActivity(intent);
+        }
 
 /*
         UserDataSource userDS = new UserDataSource(this);
@@ -84,5 +93,15 @@ public class MainActivity extends AppCompatActivity {
         editor.putString("password", password);
 
         editor.commit();
+    }
+
+    private User sharedPreferencesRead(){
+        User userSaved = new User();
+        SharedPreferences settings = getSharedPreferences(LOGIN,0); //0 means private mode
+        Log.d("login",settings.getString("username", "none"));
+        Log.d("login",settings.getString("password", "none"));
+        userSaved.setUsername(settings.getString("username", "none"));
+        userSaved.setPassword(settings.getString("password", "none"));
+        return userSaved;
     }
 }
