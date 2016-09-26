@@ -73,25 +73,4 @@ public class UserDataSource {
 
         return true;
     }
-
-    public List<User> getAllUsers(){
-        List<User> users = new ArrayList<User>();
-        User user;
-        Cursor cursor = database.query(UserContract.TABLE_NAME,allColumns,null,null,null,null,null);
-        cursor.moveToFirst();
-        while(!cursor.isAfterLast()){
-            user = cursorToUser(cursor);
-            users.add(user);
-            cursor.moveToNext();
-        }
-        cursor.close();
-        return users;
-    }
-
-    private User cursorToUser(Cursor cursor){
-        User user = new User();
-        user.setUsername(cursor.getString(0));
-        user.setPassword(cursor.getString(1));
-        return user;
-    }
 }

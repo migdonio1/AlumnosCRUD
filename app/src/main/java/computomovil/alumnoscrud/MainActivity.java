@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -25,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
         inputUsername = (EditText) findViewById(R.id.inputUsername);
         inputPassword = (EditText) findViewById(R.id.inputPassword);
 
+/*
         UserDataSource userDS = new UserDataSource(this);
+
         userDS.open();
-
         userDS.insertUser("migdonio", "123456");
-
         userDS.close();
+*/
+
 
        /* StudentDataSource studentsDS = new StudentDataSource(this);
         studentsDS.open();
@@ -51,17 +54,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickLoginButton(View v) {
-        Intent intent = new Intent(this, StudentsListActivity.class);
-
         String username = inputUsername.getText().toString().trim();
         String password = inputPassword.getText().toString();
 
+        UserDataSource userDS = new UserDataSource(this);
 
+        userDS.open();
+        boolean validUser = userDS.validUser(username,password);
+        userDS.close();
 
-        sharedPreferencesUpdate(username, password);
-
-
-        startActivity(intent);
+        if(!validUser) {
+            Toast loginFailedMessage = Toast.makeText(
+                    getApplicationContext(),
+                    "Usuario o contraseña invalido",
+                    Toast.LENGTH_SHORT);
+            loginFailedMessage.show();
+        } else {
+            Intent intent = new Intent(this, StudentsListActivity.class);
+            sharedPreferencesUpdate(username, password);
+            startActivity(intent);
+        }
     }
 
     private void sharedPreferencesUpdate(String username, String password) {
