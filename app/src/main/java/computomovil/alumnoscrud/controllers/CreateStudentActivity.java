@@ -1,4 +1,4 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.controllers;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import computomovil.alumnoscrud.R;
+import computomovil.alumnoscrud.database.StudentDataSource;
 
 public class CreateStudentActivity extends AppCompatActivity {
 

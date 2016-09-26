@@ -1,4 +1,4 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.models;
 
 /**
  * Created by root on 9/19/16.

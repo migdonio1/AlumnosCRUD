@@ -1,17 +1,16 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.controllers;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 
-import java.util.List;
+import computomovil.alumnoscrud.R;
+import computomovil.alumnoscrud.database.StudentDataSource;
 
 public class EditStudentActivity extends AppCompatActivity {
 

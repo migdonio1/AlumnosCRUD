@@ -1,4 +1,4 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,6 +9,8 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import computomovil.alumnoscrud.models.Student;
 
 /**
  * Created by root on 9/19/16.

@@ -1,4 +1,4 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.controllers;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -9,8 +9,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.List;
 import java.util.Objects;
+
+import computomovil.alumnoscrud.R;
+import computomovil.alumnoscrud.models.User;
+import computomovil.alumnoscrud.database.UserDataSource;
 
 public class MainActivity extends AppCompatActivity {
 

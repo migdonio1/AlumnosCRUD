@@ -1,20 +1,20 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.controllers;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringDef;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.List;
-import java.util.stream.Collectors;
+
+import computomovil.alumnoscrud.R;
+import computomovil.alumnoscrud.models.Student;
+import computomovil.alumnoscrud.database.StudentDataSource;
 
 /**
  * Created by root on 9/19/16.

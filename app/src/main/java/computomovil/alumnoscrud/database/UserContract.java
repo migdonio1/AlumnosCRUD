@@ -1,4 +1,4 @@
-package computomovil.alumnoscrud;
+package computomovil.alumnoscrud.database;
 
 import android.provider.BaseColumns;
 
