@@ -13,27 +13,7 @@
     <bookmark url="file://$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/MainActivity.java" line="80" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8236c4e-14c6-4c79-9456-f4fb6a80fe71" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/CreateStudentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/CreateStudentActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/EditStudentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/EditStudentActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/MainActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/Student.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/models/Student.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/StudentContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/StudentContract.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/StudentDBHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/StudentDBHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/StudentDataSource.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/StudentDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/StudentsListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/StudentsListActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/models/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/UserContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/UserContract.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/UserDBHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/UserDBHelper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/UserDataSource.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/database/UserDataSource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/ViewStudentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/computomovil/alumnoscrud/controllers/ViewStudentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_student.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_student.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_student.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_student.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_student.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_view_student.xml" />
-    </list>
+    <list default="true" id="f8236c4e-14c6-4c79-9456-f4fb6a80fe71" name="Default" comment="" />
     <ignored path="AlumnosCRUD.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -146,8 +126,8 @@
       <file leaf-file-name="student_list.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/student_list.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8831169">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.46753246">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -1873,24 +1853,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alumnoscrud" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AlumnosCRUD" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2184,24 +2146,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922536" sideWeight="0.4969651" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4947183" sideWeight="0.5030349" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29577464" sideWeight="0.5030349" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28169015" sideWeight="0.4969651" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29577464" sideWeight="0.49448818" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29577464" sideWeight="0.4969651" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5055118" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2340,8 +2302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/student_list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8831169">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.46753246">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 /*
+        //Crea un usuario en la base de datos para poder hacer login
         UserDataSource userDS = new UserDataSource(this);
 
         userDS.open();
@@ -46,23 +47,6 @@ public class MainActivity extends AppCompatActivity {
         userDS.close();
 */
 
-
-       /* StudentDataSource studentsDS = new StudentDataSource(this);
-        studentsDS.open();
-
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio", "Rodriguez Te", "LCC");
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio2", "Rodriguez Te", "LIS");
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio3", "Rodriguez Te", "LCC");
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio4", "Rodriguez Te", "LCC");
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio5", "Rodriguez Te", "LIC");
-        studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio6", "Rodriguez Te", "LCC");
-
-        List<Student> student = studentsDS.getAllStudents();
-
-        studentsDS.close();
-
-        Log.d("TEST", String.valueOf(student.size()));
-        Log.d("TEST", student.get(0).getFirstname());*/
     }
 
     public void onClickLoginButton(View v) {
@@ -76,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         userDS.close();
 
         if(!validUser) {
+            inputUsername.setText("");
+            inputPassword.setText("");
             Toast loginFailedMessage = Toast.makeText(
                     getApplicationContext(),
                     "Usuario o contraseña invalido",
