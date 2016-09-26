@@ -55,6 +55,25 @@ public class UserDataSource {
         return newRowId;
     }
 
+    public boolean validUser(String username, String passwordWritten)
+    {
+        Cursor cursor=database.query(UserContract.TABLE_NAME, null, " username=?", new String[]{username}, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return false;
+        }
+
+        cursor.moveToFirst();
+        String passwordUser = cursor.getString(cursor.getColumnIndex("password"));
+        cursor.close();
+
+        if(!passwordWritten.equals(passwordUser)){
+            return false;
+        }
+
+        return true;
+    }
+
     public List<User> getAllUsers(){
         List<User> users = new ArrayList<User>();
         User user;
@@ -75,5 +94,4 @@ public class UserDataSource {
         user.setPassword(cursor.getString(1));
         return user;
     }
-
 }

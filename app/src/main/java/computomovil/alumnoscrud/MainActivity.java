@@ -25,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
         inputUsername = (EditText) findViewById(R.id.inputUsername);
         inputPassword = (EditText) findViewById(R.id.inputPassword);
 
-       /* StudentDataSource studentsDS = new StudentDataSource(this);
+        UserDataSource userDS = new UserDataSource(this);
+        userDS.open();
 
+        userDS.insertUser("migdonio", "123456");
+
+        userDS.close();
+
+       /* StudentDataSource studentsDS = new StudentDataSource(this);
         studentsDS.open();
 
         studentsDS.insertStudent("migdonio1","123456", "Raul Migdonio", "Rodriguez Te", "LCC");
@@ -49,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         String username = inputUsername.getText().toString().trim();
         String password = inputPassword.getText().toString();
+
 
 
         sharedPreferencesUpdate(username, password);
