@@ -64,7 +64,6 @@ public class StudentsListActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     public void onClickAddButton(View v) {

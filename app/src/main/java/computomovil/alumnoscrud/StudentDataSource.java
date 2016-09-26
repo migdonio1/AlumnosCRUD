@@ -17,10 +17,10 @@ public class StudentDataSource {
     private SQLiteDatabase database;
     private StudentDBHelper studentDBHelper;
     private String[] allColumns = {
+            StudentContract._ID,
             StudentContract.COLUMN_NAME_FIRSTNAME,
             StudentContract.COLUMN_NAME_LASTNAME,
-            StudentContract.COLUMN_NAME_DEGREE,
-            StudentContract._ID
+            StudentContract.COLUMN_NAME_DEGREE
     };
 
     public StudentDataSource(Context context){
@@ -37,8 +37,6 @@ public class StudentDataSource {
 
     /**
      * Function oriented to insert a new Student into DataBase
-     * @param username
-     * @param password
      * @param firstname
      * @param lastname
      * @param degree
@@ -107,10 +105,10 @@ public class StudentDataSource {
 
     private Student cursorToStudent(Cursor cursor){
         Student student = new Student();
-        student.setFirstname(cursor.getString(0));
-        student.setLastname(cursor.getString(1));
-        student.setDegree(cursor.getString(2));
-        student.setId(cursor.getInt(3));
+        student.setId(cursor.getInt(0));
+        student.setFirstname(cursor.getString(1));
+        student.setLastname(cursor.getString(2));
+        student.setDegree(cursor.getString(3));
         return student;
     }
 
